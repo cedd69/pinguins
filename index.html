@@ -1,84 +1,70 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>La reproduction des pingouins</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-      /* Définir le style pour le corps de la page */
-      body {
-        font-family: Arial, sans-serif;
-        background-color: #e9ebee;
-      }
-      
-      /* Définir le style pour le conteneur principal */
-      .container {
-        max-width: 800px;
-        margin: 0 auto;
-        background-color: #fff;
-        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-        border-radius: 10px;
-        overflow: hidden;
-        position: relative;
-      }
-      
-      /* Définir le style pour l'en-tête */
-      .header {
-        background-color: #3b5998;
-        color: #fff;
-        padding: 10px 20px;
-        text-align: center;
-      }
-      
-      /* Définir le style pour le titre */
-      h1 {
-        font-size: 3em;
-        margin-bottom: 20px;
-        text-align: center;
-        position: relative;
-        color: #000;
-        text-shadow: 1px 1px 0 #fff;
-      }
-      
-      /* Définir le style pour le paragraphe */
-      p {
-        font-size: 1.5em;
-        line-height: 1.5;
-        margin-bottom: 20px;
-        padding: 0 20px;
-        color: #000;
-      }
-      
-      /* Définir le style pour les images */
-      img {
-        max-width: 100%;
-        height: auto;
-        margin-bottom: 20px;
-      }
-      
-      /* Définir le style pour le pied de page */
-      .footer {
-        background-color: #f2f2f2;
-        color: #999;
-        padding: 10px 20px;
-        text-align: center;
-        font-size: 0.8em;
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="container">
-      <div class="header">
-        <h1>La reproduction des pingouins</h1>
-      </div>
-      <img src="https://via.placeholder.com/800x400.png?text=Image+de+pingouins" alt="Image de pingouins">
-      <p>Les pingouins se reproduisent en Antarctique et dans les régions sub-antarctiques en construisant des nids faits de petits cailloux, de brindilles et de plumes. Les deux parents partagent la responsabilité de couver les œufs et d'élever les poussins. La période de reproduction est souvent difficile pour les oiseaux, car les conditions météorologiques sont extrêmes. </p>
-      <div class="footer">
-        © 2023 | Tous droits réservés | Site réalisé par ChatGPT
-      </div>
-    </div>
-  </body>
+<head>
+	<title>Page avec menus déroulants à gauche</title>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+		}
+		nav {
+			width: 200px;
+			height: 100%;
+			background-color: #333;
+			position: fixed;
+			left: 0;
+			top: 0;
+			overflow-y: auto;
+			color: #fff;
+			padding: 20px;
+		}
+		nav ul {
+			list-style: none;
+			padding: 0;
+			margin: 0;
+		}
+		nav li {
+			padding: 10px 0;
+			border-bottom: 1px solid #555;
+		}
+		nav a {
+			color: #fff;
+			text-decoration: none;
+			display: block;
+		}
+		nav ul ul {
+			display: none;
+		}
+		nav ul li:hover > ul {
+			display: block;
+		}
+	</style>
+</head>
+<body>
+	<nav>
+		<ul>
+			<li><a href="#">Menu 1</a></li>
+			<li><a href="#">Menu 2</a>
+				<ul>
+					<li><a href="#">Sous-menu 1</a></li>
+					<li><a href="#">Sous-menu 2</a></li>
+					<li><a href="#">Sous-menu 3</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Menu 3</a></li>
+			<li><a href="#">Menu 4</a>
+				<ul>
+					<li><a href="#">Sous-menu 1</a></li>
+					<li><a href="#">Sous-menu 2</a></li>
+					<li><a href="#">Sous-menu 3</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Menu 5</a></li>
+		</ul>
+	</nav>
+	<main>
+		<h1>Titre de la page</h1>
+		<p>Contenu de la page</p>
+	</main>
+</body>
 </html>
