@@ -4,16 +4,29 @@
     <title>La reproduction des pingouins</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-      /* Définir le style pour le contenu */
-      .content {
+      /* Définir le style pour le corps de la page */
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #e9ebee;
+      }
+      
+      /* Définir le style pour le conteneur principal */
+      .container {
         max-width: 800px;
         margin: 0 auto;
-        padding: 50px;
-        text-align: justify;
         background-color: #fff;
         box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
         border-radius: 10px;
+        overflow: hidden;
         position: relative;
+      }
+      
+      /* Définir le style pour l'en-tête */
+      .header {
+        background-color: #3b5998;
+        color: #fff;
+        padding: 10px 20px;
+        text-align: center;
       }
       
       /* Définir le style pour le titre */
@@ -22,8 +35,8 @@
         margin-bottom: 20px;
         text-align: center;
         position: relative;
-        color: #fff;
-        text-shadow: 1px 1px 0 #333;
+        color: #000;
+        text-shadow: 1px 1px 0 #fff;
       }
       
       /* Définir le style pour le paragraphe */
@@ -31,6 +44,8 @@
         font-size: 1.5em;
         line-height: 1.5;
         margin-bottom: 20px;
+        padding: 0 20px;
+        color: #000;
       }
       
       /* Définir le style pour les images */
@@ -40,29 +55,30 @@
         margin-bottom: 20px;
       }
       
-      /* Définir le style pour la bannière */
-      .banner {
-        width: 100%;
-        height: 200px;
+      /* Définir le style pour le pied de page */
+      .footer {
+        background-color: #f2f2f2;
+        color: #999;
+        padding: 10px 20px;
+        text-align: center;
+        font-size: 0.8em;
         position: absolute;
-        top: -20px;
-        left: -20px;
-        z-index: -1;
-        background-image: url("https://via.placeholder.com/1200x600.png?text=Image+artistique");
-        background-size: cover;
-        background-position: center;
-        filter: blur(10px);
+        bottom: 0;
+        left: 0;
+        width: 100%;
       }
     </style>
   </head>
   <body>
-    <div class="content">
-      <h1>La reproduction des pingouins</h1>
-      <div class="banner"></div>
+    <div class="container">
+      <div class="header">
+        <h1>La reproduction des pingouins</h1>
+      </div>
       <img src="https://via.placeholder.com/800x400.png?text=Image+de+pingouins" alt="Image de pingouins">
-      <p>Les pingouins sont des oiseaux qui se reproduisent principalement en Antarctique et dans les régions sub-antarctiques. La reproduction chez les pingouins commence généralement à la fin de l'hiver austral, lorsque les oiseaux se rassemblent en grandes colonies pour trouver un partenaire et nicher.</p>
-      <p>Les pingouins se reproduisent généralement en construisant des nids faits de petits cailloux, de brindilles et de plumes. Les deux parents partagent la responsabilité de couver les œufs et d'élever les poussins. Les poussins naissent avec un duvet et sont nourris avec du poisson régurgité par leurs parents.</p>
-      <p>La période de reproduction chez les pingouins est souvent difficile, car les oiseaux doivent lutter contre des conditions climatiques extrêmes, notamment des tempêtes de neige, des vents violents et des températures glaciales. Cependant, malgré ces défis, les pingouins continuent de se reproduire chaque année avec succès.</p>
+      <p>Les pingouins se reproduisent en Antarctique et dans les régions sub-antarctiques en construisant des nids faits de petits cailloux, de brindilles et de plumes. Les deux parents partagent la responsabilité de couver les œufs et d'élever les poussins. La période de reproduction est souvent difficile pour les oiseaux, car les conditions météorologiques sont extrêmes. </p>
+      <div class="footer">
+        © 2023 | Tous droits réservés | Site réalisé par ChatGPT
+      </div>
     </div>
   </body>
 </html>
